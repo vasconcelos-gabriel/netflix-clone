@@ -43,7 +43,7 @@ NEXTAUTH_JWT_SECRET=
 NEXTAUTH_SECRET=
 ```
 
-### Iniciar aplicação
+### Como iniciar aplicação
 
 ```shell
 npm run dev
