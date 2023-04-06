@@ -19,12 +19,10 @@ export async function getServerSideProps(context: NextPageContext) {
   }
 }
 
-const profiles = () => {
-
+const Profiles = () => {
   const router = useRouter()
 
-    const { data: user } = useCurrentUser()
-
+  const { data: user } = useCurrentUser()
 
   return (
     <div className="flex items-center h-full justify-center">
@@ -51,13 +49,15 @@ const profiles = () => {
               >
                 <img src="/images/default-blue.png" alt="Profile" />
               </div>
-              <div className='
+              <div
+                className="
                 mt-4
                 text-gray-400
                 text-2xl
                 text-center
                 group-hover:text-white
-              '>
+              "
+              >
                 {user?.name}
               </div>
             </div>
@@ -68,4 +68,4 @@ const profiles = () => {
   )
 }
 
-export default profiles
+export default Profiles
